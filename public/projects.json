@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Premier projet",
+    "hook": "Découvrez les bases de Next.js",
+    "slug": "premier-projet",
+    "coverImage": "https://upload.wikimedia.org/wikipedia/commons/b/b2/WhiteCat.jpg",
+    "content": "# Bienvenue\nVoici un projet écrit en Markdown."
+  },
+  {
+    "title": "Deuxième projet",
+    "hook": "Découvrez les bases de Next.js",
+    "slug": "deuxieme-projet",
+    "coverImage": "https://upload.wikimedia.org/wikipedia/commons/b/b2/WhiteCat.jpg",
+    "content": "# Bienvenue\nVoici un projet écrit en Markdown."
+  },
+  {
+    "title": "Troisième projet",
+    "hook": "Découvrez les bases de Next.js",
+    "slug": "troisieme-projet",
+    "coverImage": "https://upload.wikimedia.org/wikipedia/commons/b/b2/WhiteCat.jpg",
+    "content": "# Bienvenue\nVoici un projet écrit en Markdown."
+  }
+]

@@ -1,0 +1,18 @@
+.cardList {
+  padding: 25px;
+  border-radius: 50px;
+  background: var(--background);
+  box-shadow:  var(--box-shadow-color);
+  }
+
+.iconButtonContainer{
+  width: 100%;
+  text-align: end;
+}
+
+.cardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}

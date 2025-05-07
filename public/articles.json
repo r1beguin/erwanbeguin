@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Premier article",
+    "hook": "Découvrez les bases de Next.js",
+    "slug": "premier-article",
+    "coverImage": "https://upload.wikimedia.org/wikipedia/commons/b/b2/WhiteCat.jpg",
+    "content": "# Bienvenue\nVoici un article écrit en Markdown."
+  },
+  {
+    "title": "Deuxième article",
+    "hook": "Découvrez les bases de Next.js",
+    "slug": "deuxieme-article",
+    "coverImage": "https://upload.wikimedia.org/wikipedia/commons/b/b2/WhiteCat.jpg",
+    "content": "# 2025-04-22 mardi\n\n## 🧹 **Tâches Ménagères du Jour**\n- [ ] 🛍️ Faire les courses\n- [ ] 🚮 Vider les poubelles\n- [ ] 👕 Ranger le linge\n\n🔄 **Missions quotidiennes**\n- [ ] 🚰 Eau loulous\n- [ ] 🍽️ Vaisselle + 🧹 Cuisine rangée (soir)\n- [ ] 🗑️ Balais + aération (matin)\n\n## 📝 Notes"
+  },
+  {
+    "title": "Troisième article",
+    "hook": "Découvrez les bases de Next.js",
+    "slug": "troisieme-article",
+    "coverImage": "https://upload.wikimedia.org/wikipedia/commons/b/b2/WhiteCat.jpg",
+    "content": "# Bienvenue\nVoici un article écrit en Markdown."
+  }
+]

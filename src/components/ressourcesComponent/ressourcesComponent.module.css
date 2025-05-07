@@ -1,0 +1,10 @@
+.ressourcesList {
+    padding: 25px;
+    border-radius: 50px;
+    background: var(--background);
+    box-shadow:  var(--box-shadow-color);
+}
+
+.list{
+    margin: 15px;
+}
