@@ -6,6 +6,7 @@ import "./globals.css";
 import HomeButton from "@/components/homeButton/homeButton"; 
 import IconButton from '@/components/basicComponents/iconButton/IconButton';
 import { FaMoon, FaSun } from 'react-icons/fa';
+import { metadata } from "./metadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,31 +23,34 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") || "light";
-    }
-    return "light";
-  });
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+    const storedTheme = localStorage.getItem("theme") || "light";
+    setTheme(storedTheme);
+    document.documentElement.setAttribute("data-theme", storedTheme);
+  }, []);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
   };
 
   return (
     <html lang="en">
+      <head>
+        <title>{String(metadata.title ?? "Default Title")}</title>
+        <meta name="description" content={metadata.description ?? "Default description"} />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
           <HomeButton />
           <IconButton
-            icon={theme === "light" ? <FaMoon /> : <FaSun />}
+            icon={theme === "light" ? <FaMoon color="var(--foreground)" /> : <FaSun color="var(--foreground)" />}
             tooltipText="Toggle Dark Mode"
-            backgroundColor="var(--primary-color)"
+            backgroundColor="var(--background)"
             onClick={toggleTheme}
             width="40px"
             height="40px"

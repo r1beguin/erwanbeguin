@@ -24,11 +24,12 @@ const HomeButton: React.FC = () => {
 
   return (
     <IconButton
-    icon={<FaHome color="linear-gradient(145deg, #fefefe, #d5d5d5)" size={50} />}
+    icon={<FaHome color="var(--foreground)" size={50} />}
     tooltipText="email@example.com"
     onClick={handleRedirect}
     width='100px'
     height='100px'
+    backgroundColor="var(--primary-color)"
   />
   );
 };

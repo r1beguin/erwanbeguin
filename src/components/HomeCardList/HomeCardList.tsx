@@ -49,9 +49,9 @@ const HomeCardList: React.FC<HomeCardListProps> = ({ title, link, type }) => {
       {link && (
         <div className={styles.iconButtonContainer}>
           <IconButton
-            icon={<FaArrowRight color="var(--background)"/>}
+            icon={<FaArrowRight color="var(--foreground)"/>}
             tooltipText="Go to more articles"
-            backgroundColor="var(--foreground)"
+            backgroundColor="var(--background)"
             onClick={() => router.push(link)}
             width="50px"
             height="50px"
